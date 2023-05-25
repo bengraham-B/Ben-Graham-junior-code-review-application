@@ -146,13 +146,13 @@ function sayNumber(number){
         if(tenThousandsNum === 0){
             //^ If the number which represents is 0, it will return this string which will leave out the word which represents tenThousand.
             //^ The tens array is used as the word 'thousand' is not need at the begining of the string
-            return tens[tenThousandsNum] + ", " + thousands[thousnadsNum] + " " + hundreds[hundredsNum] + " and " + tens[tensNum]
+            return tens[tenThousandsNum] + " " + thousands[thousnadsNum] + ", " + hundreds[hundredsNum] + " and " + tens[tensNum]
 
         }
         
         if(singleNum !== 0) {
             //^ The tens array is used as the word 'thousand' is not need at the begining of the string
-            return tens[tenThousandsNum] + ", " + thousands[thousnadsNum] + " " + hundreds[hundredsNum] + " and " + tens[tensNum] + " " + single[singleNum]
+            return tens[tenThousandsNum] + " " + thousands[thousnadsNum] + ", " + hundreds[hundredsNum] + " and " + tens[tensNum] + " " + single[singleNum]
 
         }
     }
@@ -265,7 +265,7 @@ function sayNumber(number){
 }
 
 //^ The function must be palced in a console.log() as it only returns a string of the number in words.
-console.log(sayNumber("15700043"))
+console.log(sayNumber("43543"))
 
 //^ The function isimported in the number.test.js folder.
 module.exports = sayNumber
